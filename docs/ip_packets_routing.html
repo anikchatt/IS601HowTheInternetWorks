@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>How The Internet Works</title>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">How The Internet Works</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">Project Description</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team_members.html">Team Members</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Learn More
+                </a>
+                <div class="dropdown-menu active" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="how_internet_works.html">How The Internet Works</a>
+                    <a class="dropdown-item" href="domain_icann.html">Domain Name and ICANN</a>
+                    <a class="dropdown-item active" href="ip_packets_routing.html">IP Addresses, Packets, and
+                        Routing<span
+                                class="sr-only">(current)</span></a>
+                    <a class="dropdown-item" href="dns.html">DNS</a>
+                    <a class="dropdown-item" href="http_https.html">HTTP and HTTPS protocols</a>
+                    <a class="dropdown-item" href="w3c_html_css.html">W3C and HTML and CSS</a>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active">Learn More</li>
+    <li class="breadcrumb-item" aria-current="page">IP Addresses, Packets, and Routing</li>
+</ol>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1>IP Addresses, Packets, and Routing</h1>
+            <p>
+                The internet is a network of networks that links billions of devices around the world. The internet is
+                really a design philosophy and architecture expressed in a set of protocols. Protocols are a set of
+                well-known set of rules and standards that if all parties agree to use it will allow them to communicate
+                without trouble. Protocols are used to communicate between machines. The design philosophy of the
+                internet has allowed the internet to adopt and absorb new communication technologies, thanks to the use
+                of protocols. For a new technology to use the internet in some fashion, it just needs to know which
+                protocols to work with.
+            </p>
+            <p>
+                All different devices on the internet have unique addresses. This includes a computer, a mobile phone, a
+                tablet, or even a smart light bulb. An address on the internet is just a number, it is unique to each
+                device and network. Similar to a mailing system, you do not need to know a person’s name to send them a
+                letter, but you do need their address and the proper format of their address to ensure that they receive
+                the mail you are sending them. The addressing system for the computers on the internet forms part of one
+                of the most important protocols used in internet communication, known as the internet protocol or IP. A
+                computer’s address is known as the Internet Protocol (IP) Address.
+            </p>
+            <img src="images/ipaddress.png" height="210" width="350" alt="IPAddress" style="align-content: center">
+            <p>
+                Data that is sent around the world through the internet is divided into packets. Each packet has a max
+                size of 65535 bytes and has a header with some technical information. A header will also have a ‘from’
+                address and a ‘to’ address and the actual data it is transferring. Each header is 60 bytes. The packets
+                are then divided into several parts and move on the Internet to their destination along different paths
+                each taking different times. The packets are then reordered and the received packets are acknowledged
+                back to the sender. The sender then resends any packets that were not acknowledged.
+            </p>
+            <p>
+                To piece all of this together, let us say that you are visiting a website from your computer. What is
+                technically happening is that your computer is sending a message to another computer where the website
+                is hosted. The message header would read “TO:192.43.258.19 FROM:174.129.14.120”. The computer now knows
+                where the message is coming from and where to send information to. IP addresses carry information about
+                the computer as well. Traditional IP addresses were made up of 32 bits. Through an IP address, we are
+                able to determine what network and subnetwork the device is connected through.
+                <br>
+                <br>
+
+                <img src="images/ip.png" height="400" width="100%" alt="Amazon"
+                     style="align-content: center">
+            </p>
+            <p>
+                This version of IP addressing is called IPv4, and was designed in 1973, and adopted in the 1980s. This
+                version provided more than 4 billion addresses. However, with the growth of the internet, 4 billion
+                unique
+                addresses were not enough. Today the internet is transitioning to a new form of addresses known as IPv6.
+                IPv6 addresses use 128 bits per address and provide the world with 340 undecillion unique addresses.
+            </p>
+            <p>
+                Now back to packets and routing. Information on the internet is not necessarily transferred on a fixed
+                path. Information on the internet goes from one computer to another in a ‘packet’ of information. The
+                path that this information takes is known as the ‘routing’. Packets have limitations and may not carry
+                all the information at once. Information, data, an image or a song might be made up of millions of bits
+                that are too many to send in one packet. The computer sending the image will break it into many packets
+                and send them to their destination. The packets do not have designated routes, they only carry
+                information of where it is coming from and where it is going to.
+
+            </p>
+            <p>
+                Routers on the internet act as packets managers and they keep the packets on the internet moving
+                smoothly. However, they might arrive at the destination at different times and in different orders.
+                Every router keeps track of the routes that the packets are travelling, the more paths that are
+                available, the more fault tolerant the network is. So when a large file is sent from one computer to
+                another, the Transmission Control Protocol will help manage the sending and receiving of the packets
+                that carry this file. When the packets arrive at their destination, the TCP acknowledges the packets
+                received and if all the packets are accounted for then you can access the file that was sent/received.
+                However, if some packets are missing then the TCP will communicate with the sender for the missing
+                packets to ensure that the full file is received and packets are reassembled in order.
+
+            </p>
+            <p>
+                The agreed standards and protocols of how data is sent around the internet help systems to connect,
+                collaborate and communicate with each other seamlessly. TCP, IP and Routers are at work no matter what
+                you are doing on your computers. Whether listening to a song, streaming your favorite TV show, or
+                sending an email. DNS servers are communicating with IP addresses, packets are being sent through
+                routers back and forth, and TCP is managing the packets being sent and received. This is all happening
+                at the same thanks to the people that made it possible for our computers to speak the same language.
+                <br>
+                <br>
+                <br>
+            </p>
+
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Learn More
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="how_internet_works.html">How the Internet Works</a></li>
+                    <li class="list-group-item"><a href="domain_icann.html">Domain Name and ICANN</a></li>
+                    <li class="list-group-item active">IP Addresses, Packets, and Routing</li>
+                    <li class="list-group-item"><a href="dns.html">DNS</a></li>
+                    <li class="list-group-item"><a href="http_https.html">HTTP and HTTPS protocols</a></li>
+                    <li class="list-group-item"><a href="w3c_html_css.html">W3C and HTML and CSS</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: White;
+        color: Black;
+        text-align: center;
+    }
+
+</style>
+
+<footer>
+    <li><a class="text-muted" href="https://www.linkedin.com/in/anikchattopadhyay/">Anik Chattopadhyay</a></li>
+    <li><a class="text-muted" href="https://www.linkedin.com/in/elio-nicolas/">Elio Nicolas</a></li>
+</footer>
+</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
